@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+#botoes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 300px;
+    height: 300px;
+   
+    
+}
+#resultado{
+    background: rgb(52, 52, 52);
+    color: white;
+    height: 75px;
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#Calculadora{
+    width: 300px;
+    text-align: right;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgb(186, 186, 186);
+}
+#botoes button{
+    font-size:1.5rem;
+    border: none;
+    margin: 1px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#zero{
+    grid-column: span 2;
+    background: rgb(116, 116, 116);
+}
+#Orange{
+    background-color: rgb(88, 105, 171);
+}
+#Gray{
+    background: rgb(116, 116, 116);
+}
+#botoes :active{
+    opacity: 0.9;
+
+}
